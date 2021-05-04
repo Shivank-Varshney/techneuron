@@ -6,6 +6,11 @@ import Service1 from "../images/service-1.png";
 import Service2 from "../images/service-2.png";
 import Service3 from "../images/service-3.png";
 import Service4 from "../images/service-4.png";
+import Service5 from "../images/service-5.png";
+import Service6 from "../images/service-6.png";
+import Service7 from "../images/service-7.png";
+import Service8 from "../images/service-8.png";
+import Service9 from "../images/service-9.png";
 import Avatar from "../images/avatar.png";
 import {NavHashLink} from "react-router-hash-link";
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
@@ -102,6 +107,26 @@ const Home = () => {
                     </div>
                     <div className="row">
                         <ServiceCard 
+                            id = "software-development" imgsrc = {Service5} title = "software development"
+                            content = "Create, assemble, coordinate, scale and overhaul your software with Techneurons! We believe in creativity and the study of programming and management; we assist you with building excellent software arrangements and items just as we deliver a wide array of related services. We offer custom software development to plan and fabricate software arrangements, given a company's requirements. Techneurons gives comprehensive custom software solutions and delivers exceptionally tailored solutions with speed and quality."
+                        />
+                        <ServiceCard 
+                            id = "software-services" imgsrc = {Service6} title = "software services"
+                            content = "Techneurons has been putting forth a valiant effort to keep up the relationship with its clients and offers excellent assistance in designing, fabricating a software solution for different purposes, models and innovation stacks. We join innovative people and highly knowledgeable people together so that they can solve all your problems and provide better solutions and services. We are always trying new technologies, working to make your software more straightforward and budget-friendly."
+                        />
+                        <ServiceCard 
+                            id = "website-designing" imgsrc = {Service7} title = "website designing"
+                            content = "We deliver unique websites that are wonderful to take a glance at and perform similarly well. Our website design team guarantees a beautiful client experience that incurs generously higher crowd and change rates. First looks are vital, and we can get that extra points for you. As your web designing organization, we work in a consultative way, advising you as your guides, creators and engineers. Your site should be apparent - all around organized, consistently coordinated sites with meta labels, title labels and other SEO practices; we will help you with every bit of detail to make your website a success."
+                        />
+                        <ServiceCard 
+                            id = "social-media-marketing" imgsrc = {Service8} title = "social media marketing"
+                            content = "Communicate with billions of clients via web-based media. Associate, collaborate, share and connect with everyone online to construct your image. We have the mastery to begin, support and increment your associations with clients, visitors. It is essential to understand the capability of Social Media as a web-based showcasing device. At Techneuron, one of the best website design organizations in India, we have procured the mastery in figuring and carrying out Social Media Optimization (SMO) techniques for your business."
+                        />
+                        <ServiceCard 
+                            id = "website-promotions" imgsrc = {Service9} title = "website promotions"
+                            content = "Techneuron is an organization that bears each one of your concerns and still gets the most amount of profitability for you. The one which places you in the triumphant shoes. Indeed, you are at the right spot for your website promotions. Different methods include result arranged email advertising, viral advertising, PPC technique. Building a blog and creation successful content are a few of other intends to arrive at your target client base. Animation means active promoting of your site that consequently turns guests crowd into regular visitors."
+                        />
+                        <ServiceCard 
                             id = "web-development" imgsrc = {Service1} title = "web development"
                             content = "Our web development organization has been creating web applications for the custom business prerequisites of all our customers. Our engineer's abilities, experience and bleeding edge innovation will fabricate nothing but the best designs."
                         />
@@ -150,8 +175,46 @@ const Home = () => {
             </section>
 
 
+            {/* Career Section */}
+            <section id="career">
+                <div className="container mb-5">
+                    <div className="row">
+                        <div className="col">
+                            <h2 className="career-title mb-5" data-aos="fade-up">career</h2>
+                            <div className="row">
+                                <div className="col-md-6 mx-auto">
+                                    <form>
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="InputName">Name<span className="asterisk">*</span></label>
+                                            <input type="text" className="form-control" placeholder="Enter your name" name="name" id="InputName" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="InputNumber">Mobile No.<span className="asterisk">*</span></label>
+                                            <input type="text" className="form-control" placeholder="Enter your number" name="number" id="InputNumber" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="InputEmail">Email<span className="asterisk">*</span></label>
+                                            <input type="email" className="form-control" placeholder="Enter your email" name="email" id="InputEmail" />
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" className="custom-file-input" id="customFile" />
+                                            <label className="custom-file-label" htmlFor="customFile">Upload Resume</label>
+                                        </div>
+                                        <button type="submit" className="btn btn-submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
             {/* Background Image */}
             <section id="back-img"></section>
+
+
 
             {/* Contact Section */}
             <section id="contact-us">
@@ -225,7 +288,7 @@ const Home = () => {
 const ServiceCard = (props) => {
     return(
         <>
-            <div className="col-xl-3 col-md-6" id={props.id} data-aos="fade-up">
+            <div className="col-lg-4" id={props.id} data-aos="fade-up">
                 <div className="card mb-4">
                 <div className="card-header d-flex align-items-center">
                     <img src={props.imgsrc} className="card-img-top p-2" alt="services of techneuron" />

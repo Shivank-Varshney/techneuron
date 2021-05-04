@@ -19,9 +19,9 @@ $secondary-color: #08172a;
         color: $primary-color;
         font-weight: bolder;
         text-transform: uppercase;
-        font-size: 28px;
+        font-size: 26px;
         .header-logo{
-            height: 50px;
+            height: 40px;
             margin-right: 10px;
         }
     }
@@ -172,7 +172,7 @@ $secondary-color: #08172a;
     }
     .card{
         background-image: linear-gradient(to bottom, #133c5a, #08172a);
-        min-height: 480px;
+        min-height: 600px;
         border-radius: 8px;
         color: #ffffff;
         .card-header{
@@ -270,6 +270,52 @@ $secondary-color: #08172a;
     }
 }
 
+#career{
+    padding-top: 80px;
+    .career-title{
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 46px;
+        color: $secondary-color;
+        transform:skewX(160deg);
+    }
+    label{
+        color: $secondary-color;
+        font-size: 16px;
+        .asterisk{
+            color: red;
+        }
+    }
+    .form-control{
+        box-shadow: none;
+        border-radius: 0;
+        &:focus{
+            outline: 1px solid $primary-color;
+        }
+    }
+    .btn-submit{
+        background-color: $secondary-color;
+        color: #ffffff;
+        font-weight: bolder;
+        margin-top: 30px;
+        padding: 5px 40px;
+        border-radius: 20px 0 20px 0;
+        transition-duration: 1000ms;
+        transition-property: border-radius;
+        &:hover{
+            border-radius: 0 20px 0 20px;
+        }
+    }
+}
+@media only screen and (max-width: 540px) {
+    #about-us{
+        .about-title{
+            font-size: 36px;
+        }
+    }
+}
+
 #back-img{
     background-image: url(./assets//images//back.jpg);
     height: 300px;
@@ -310,10 +356,16 @@ $secondary-color: #08172a;
         }
     }
     .btn-submit{
-        background-color: $primary-color;
+        background-color: #ffffff;
+        color: $secondary-color;
         font-weight: bolder;
         padding: 5px 40px;
-        border-radius: 10px;
+        border-radius: 20px 0 20px 0;
+        transition-duration: 1000ms;
+        transition-property: border-radius;
+        &:hover{
+            border-radius: 0 20px 0 20px;
+        }
     }
     .contact-details{
         color: #ffffff;
@@ -374,12 +426,12 @@ $secondary-color: #08172a;
         color: $primary-color;
         font-weight: bolder;
         text-transform: uppercase;
-        font-size: 42px;
+        font-size: 28px;
         text-decoration: none;
     }
     .footer-logo{
-        height: 50px;
-        margin-right: 20px;
+        height: 40px;
+        margin-right: 15px;
     }
     .footer-social{
         .MuiSvgIcon-root{

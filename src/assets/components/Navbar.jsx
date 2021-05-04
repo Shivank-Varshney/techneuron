@@ -15,7 +15,7 @@ const Navbar = () => {
                                     <nav className="navbar navbar-expand-lg" data-aos="fade-down" data-aos-offset="0">
                                         <a className="navbar-brand" href="/#">
                                             <img src={Logo} alt="header logo" className="header-logo" />
-                                            Techneuron
+                                            Techneuron infotech
                                         </a>
                                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <MenuIcon />

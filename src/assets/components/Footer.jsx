@@ -21,7 +21,7 @@ const Footer = () => {
                             <div className ="col-xl-4 col-lg-5 col-md-7 col-sm-7 pb-sm-5 pb-3">
                                 <NavHashLink to="/#" className ="footer-title">
                                     <img src={Logo} alt="footer logo" className="footer-logo" />
-                                    techneuron
+                                    techneuron infotech
                                 </NavHashLink>     
                                 <div className ="py-4 text-white">
                                     <h5><LocationOnIcon /> A-3 Rajouri Garden, New Delhi West, 110027 India.</h5>
@@ -44,33 +44,33 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className ="col-xl-2 col-lg-2 col-md-4 col-sm-5 pb-sm-5 pb-3">
-                                <h4>company</h4>
-                                <ul>
-                                    <li>
-                                        <NavHashLink smooth className="navlink" to="/#">
-                                            work
-                                        </NavHashLink>
-                                    </li>
-                                    <li>
-                                        <NavHashLink smooth className="navlink" to="/#contact-us">
-                                            contact us
-                                        </NavHashLink>
-                                    </li>
-                                    <li>
-                                        <NavHashLink smooth className="navlink" to="/#testimonials">
-                                            testimonials
-                                        </NavHashLink>
-                                    </li>
-                                    <li>
-                                        <NavHashLink smooth className="navlink" to="/privacy-policy#">
-                                            privacy policy
-                                        </NavHashLink>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className ="col-xl-2 col-lg-2 col-md-4 col-sm-5 pb-sm-5 pb-3">
                                 <h4>services</h4>
                                 <ul>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#software-development">
+                                            software development
+                                        </NavHashLink>
+                                    </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#software-services">
+                                            software services
+                                        </NavHashLink>
+                                    </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#website-designing">
+                                            website designing
+                                        </NavHashLink>
+                                    </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#social-media-marketing">
+                                            social media marketing
+                                        </NavHashLink>
+                                    </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#website-promotions">
+                                            website promotions
+                                        </NavHashLink>
+                                    </li>
                                     <li>
                                         <NavHashLink smooth className="navlink" to="/#web-development">
                                             web development
@@ -116,6 +116,21 @@ const Footer = () => {
                                             testimonial
                                         </NavHashLink>
                                     </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#career">
+                                            career
+                                        </NavHashLink>
+                                    </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/#contact-us">
+                                            contact us
+                                        </NavHashLink>
+                                    </li>
+                                    <li>
+                                        <NavHashLink smooth className="navlink" to="/privacy-policy#">
+                                            privacy policy
+                                        </NavHashLink>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -126,7 +141,7 @@ const Footer = () => {
                     <div className="container-fluid" id="main-footer">
                         <div className="row">
                             <div className="col-xl-12 text-center pt-3">
-                            <p>© {curryear} <strong><a href="https://www.hardcipher.io" className="copyright-link">Hardcipher Pvt Ltd</a></strong> | All Rights Reserved.</p>
+                            <p>© {curryear} <strong><NavHashLink to="/#" className="copyright-link">Techneuron infotech</NavHashLink></strong> | All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
