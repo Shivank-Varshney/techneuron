@@ -309,7 +309,7 @@ const Testimonial = () => {
             <div className="col-md-9 px-3 testimonial mx-auto text-center" data-aos="fade-up">
                 <p className="testimonial-content my-4"><sup><FormatQuoteIcon /></sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos distinctio modi aliquam! Deserunt accusantium perferendis velit labore autem dolore, necessitatibus, quibusdam accusamus nesciunt possimus mollitia nulla facere excepturi<sub><FormatQuoteIcon /></sub></p>
                 <div className="testimonial-title">
-                    <h3>SHIVANK VARSHNEY</h3>
+                    <h3>Lorem Ipsum</h3>
                 </div>
                 <div className="testimonial-img mt-3">
                     <img src={Avatar} alt="avatar for testimonial" className="mx-auto avatar-img" />
